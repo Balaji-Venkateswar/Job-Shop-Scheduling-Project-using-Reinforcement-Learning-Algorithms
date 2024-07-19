@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Sep 27 14:04:54 2019
-
-@author: at-lab
-"""
 import torch
 import numpy as np
 import pandas as pd
@@ -101,42 +94,3 @@ class env():
 
         return self.s, rew, self.done
 
-
-
-
-'''
-sample code:
-    x = [5,15,27,38,49] # A variable'x' with random values
-
-# Through the function below we are feeding the random values of 'x' as
-  actions 'a' to our environment and acquiring 'Next state', 'Reward'
-  and 'Reset Info' as outputs
-
-Inputs:
-
-from environment import env   # Importing the Environment
-x = [5,14,27,38,49]
-for i in range(len(x)):
-        a = x[i]
-    print(env1.next_state(a))
-
-Outputs:
-    1.(tensor([6.]), tensor([-0.1000]), False) # Here intially at (state-0) we have
-    given 5 as action-value to environment and we received next state as (6) and reward
-    as (-0.1) and reset info as false.
-
-    2.(tensor([15.]),tensor([-0.2000]), False) # At (state-6) we have given 15 as action-value
-    to environment and we received next state as (15) and reward as (-0.2) and reset info false.
-
-    3.(tensor([0.]), tensor([-0.2000]), False) # At (state-15) we have given 27 as action-value
-    to environment and we received next state as (0) and reward as (-0.2) and reset info false.
-
-    4.(tensor([0.]), tensor([-0.2000]), False) # At (state-0) we have given 38 as action-value
-    to environment and we received next state as (0) and reward as (-0.2) and reset info false.
-
-    5.(tensor([0.]), tensor([-0.2000]), False) # At (state-0) we have given 49 as action-value
-    to environment and we received next state as (0) and reward as (-0.2) and reset info false.
-
-## In this manner this environment will generate output according to your input#
-
-'''
